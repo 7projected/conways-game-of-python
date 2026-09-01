@@ -26,3 +26,6 @@ class Grid:
         index = uy * self.w + ux
 
         return self.grid[index]
+
+    def clear(self):
+        self.create_grid()

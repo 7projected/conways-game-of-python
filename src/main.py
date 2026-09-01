@@ -1,3 +1,12 @@
-#toroidal game of life
+from grid import Grid
+from game_of_life import GameOfLife
+import sys
 
-print("helolo world")
+def main():
+    app = GameOfLife(100, 70)
+    app.loop()
+
+    sys.exit()
+
+if __name__ == "__main__":
+    main()
