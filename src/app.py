@@ -27,11 +27,9 @@ class App:
                     pygame.quit()
                     return
             dt = self.clock.tick(self.app_params.fps)
+            self.window.fill(self.app_params.bgc)
             self.update()
-            self.draw()
-
-    def draw(self):
-        pass
+            pygame.display.update()
 
     def update(self):
         pass
