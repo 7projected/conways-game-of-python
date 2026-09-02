@@ -22,10 +22,7 @@ class App:
 
     def loop(self):
         while True:
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    pygame.quit()
-                    return
+            
             dt = self.clock.tick(self.app_params.fps)
             self.window.fill(self.app_params.bgc)
             self.update()

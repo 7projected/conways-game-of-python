@@ -3,7 +3,7 @@ from game_of_life import GameOfLife
 import sys
 
 def main():
-    app = GameOfLife(100, 70)
+    app = GameOfLife(100, 70, 60)
     app.loop()
 
     sys.exit()
