@@ -17,10 +17,6 @@ class GameOfLife(App):
         self.grid = Grid(grid_w, grid_h, self.cell_w, self.cell_h, toroidal, [255, 255, 255])
         self.cell_active_color = [255, 255, 255]
 
-        self.grid.set_cell(1, 1, True)
-        self.grid.set_cell(2, 1, True)
-        self.grid.set_cell(3, 1, True)
-
         self.frames_per_update = frames_per_update
         self.frame = 0
         self.paused = False
